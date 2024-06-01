@@ -23,16 +23,17 @@ class Rectangle:
         s += w
         for i in range(self.height - 2):
             s += "* "
-            s += " " * (self.width - 2)
+            s += "  " * (self.width - 2)
             s += "* \n"
         s += w
         return s
+    
 def main ():
     print("Rectangle Calculator")
     print()
     
     again = "y"
-    while again.lower == "y":
+    while again.lower() == "y":
         height = int(input("Height:   "))
         width = int(input("Width:   "))
         
